@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  /* === Roots and Roofs Light Theme === */
+  --color-rnr-light-background: #f8f9fa;           /* light gray-white */
+  --color-rnr-light-surface: #ffffff;              /* clean white */
+  --color-rnr-light-surface-alt: #f1f3f5;          /* soft gray */
+  --color-rnr-light-border: #dee2e6;               /* light border */
+  --color-rnr-light-muted: #adb5bd;                /* muted text */
+  --color-rnr-light-text: #343a40;                 /* primary text */
+  --color-rnr-light-text-muted: #6c757d;           /* subtle text */
+  --color-rnr-light-subtext: #495057;              /* secondary headings */
+  --color-rnr-light-heading: #2f4f4f;              /* dark slate (elegant) */
+  --color-rnr-light-accent: #007b5e;               /* forest green - trust */
+  --color-rnr-light-accent-hover: #005946;         /* darker hover */
+  --color-rnr-light-accent-alt: #b08968;           /* warm beige accent */
+  --color-rnr-light-success: #28a745;              /* green for success */
+  --color-rnr-light-warning: #ffc107;              /* amber warning */
+  --color-rnr-light-error: #dc3545;                /* danger red */
+  --color-rnr-light-info: #17a2b8;                 /* info blue */
+
+  /* === Roots and Roofs Dark Theme === */
+  --color-rnr-dark-background: #212529;            /* very dark background */
+  --color-rnr-dark-surface: #343a40;               /* card surface */
+  --color-rnr-dark-surface-alt: #495057;           /* darker alt surface */
+  --color-rnr-dark-border: #6c757d;                /* border gray */
+  --color-rnr-dark-muted: #adb5bd;                 /* muted text */
+  --color-rnr-dark-text: #f8f9fa;                  /* light text */
+  --color-rnr-dark-text-muted: #ced4da;            /* muted light */
+  --color-rnr-dark-subtext: #dee2e6;               /* sub headings */
+  --color-rnr-dark-heading: #e9ecef;               /* brighter text */
+  --color-rnr-dark-accent: #20c997;                /* teal accent */
+  --color-rnr-dark-accent-hover: #198754;          /* green hover */
+  --color-rnr-dark-accent-alt: #a38d7c;            /* earthy accent */
+  --color-rnr-dark-success: #28a745;
+  --color-rnr-dark-warning: #ffc107;
+  --color-rnr-dark-error: #dc3545;
+  --color-rnr-dark-info: #17a2b8;
+
+  --font-main: "Inter", sans-serif;
+  --font-secondary: "Merriweather", serif;
+}
+
+.custom-cursor-default {
+  cursor: url("./assets/circle.svg") 30 30, auto;
+}
+.custom-cursor-arrow {
+  cursor: url("./assets/circlearrow.svg") 50 50, auto;
+}
