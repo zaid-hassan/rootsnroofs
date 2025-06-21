@@ -63,7 +63,7 @@ function Projects() {
     >
       {!isMobile && <CustomCursor type={selectedCursor} />}{" "}
       <motion.h1
-        className="text-5xl md:text-7xl font-extrabold mb-6 text-gruv-soft-heading font-jetbrains-mono"
+        className="text-5xl md:text-7xl font-extrabold mb-6 text-rnr-light-heading font-jetbrains-mono"
         initial={{ y: "10vh", opacity: 0, scale: 0.8 }}
         animate={{ y: 0, opacity: 1, scale: 1 }}
         exit={{ y: "-10vh", opacity: 0, scale: 0.8 }}
@@ -98,7 +98,7 @@ function Projects() {
               overlayContent={
                 <div className="w-full h-full flex flex-col justify-between items-center p-4 rounded-lg">
                   <div className="bg-black/70 backdrop-blur-xl border-1 border-gruv-dark-info w-[90%] rounded-full">
-                    <h1 className="text-gruv-dark-text text-2xl font-jetbrains-mono text-center">
+                    <h1 className="text-rnr-light-accent text-2xl font-jetbrains-mono text-center">
                       {project.name}
                     </h1>
                   </div>
@@ -107,7 +107,7 @@ function Projects() {
                       onMouseEnter={() => dispatch(setCursorType("link"))}
                       onMouseLeave={() => dispatch(setCursorType("default"))}
                       href={project.githubLink}
-                      className="text-gruv-dark-accent cursor-none hover:text-gruv-dark-accent-alt w-full h-full flex justify-center items-center"
+                      className="text-rnr-light-accent cursor-none hover:text-rnr-light-accent-alt w-full h-full flex justify-center items-center"
                     >
                       <Link />
                     </a>
@@ -115,7 +115,7 @@ function Projects() {
                       onMouseEnter={() => dispatch(setCursorType("link"))}
                       onMouseLeave={() => dispatch(setCursorType("default"))}
                       href={project.liveLink}
-                      className="text-gruv-dark-accent cursor-none hover:text-gruv-dark-accent-alt w-full h-full flex justify-center items-center"
+                      className="text-rnr-light-accent cursor-none hover:text-rnr-light-accent-alt w-full h-full flex justify-center items-center"
                     >
                       <ExternalLink />
                     </a>
