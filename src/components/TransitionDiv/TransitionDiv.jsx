@@ -12,7 +12,7 @@ function TransitionDiv() {
         initial={{ y: "100%" }}
         animate={{ y: "100%" }}
         exit={{ y: 0 }}
-        transition={{ duration: 1.1, ease: [0.77, 0, 0.175, 1] }} // smoother easing
+        transition={{ duration: 0.9, ease: [0.77, 0, 0.175, 1] }} // smoother easing
         className="absolute inset-0 bg-rnr-dark-background origin-bottom"
       >
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -20,7 +20,7 @@ function TransitionDiv() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 0, scale: 0.95 }}
             exit={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2, duration: 1.1, ease: "easeOut" }}
+            transition={{ delay: 0.2, duration: 0.9, ease: "easeOut" }}
             className="uppercase text-4xl md:text-8xl font-extrabold font-jetbrains-mono text-rnr-dark-accent"
           >
             {selectedTab}
@@ -33,7 +33,7 @@ function TransitionDiv() {
         initial={{ y: 0 }}
         animate={{ y: "-100%" }}
         exit={{ y: "-100%" }}
-        transition={{ duration: 1.1, ease: [0.77, 0, 0.175, 1] }}
+        transition={{ duration: 0.9, ease: [0.77, 0, 0.175, 1] }}
         className="absolute inset-0 bg-rnr-dark-background origin-top"
       />
     </motion.div>
