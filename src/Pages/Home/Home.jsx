@@ -27,8 +27,8 @@ function Home() {
       {/* === Left Content === */}
       <motion.div
         className="w-full mt-11 md:mt-0 md:w-1/2 text-center md:text-left space-y-6"
-        initial={{ x: "-10vw", opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
+        initial={{ y: "-10vh", opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
         <h1 className="text-4xl md:text-5xl font-bold text-rnr-light-heading leading-tight">
@@ -53,8 +53,8 @@ function Home() {
       {/* === Right 3D House Placeholder === */}
       <motion.div
         className="w-full md:w-1/2 mt-12 md:mt-0 flex justify-center items-center"
-        initial={{ x: "10vw", opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
+        initial={{ y: "-10vh", opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
         onMouseEnter={() => setrotateSpeed(1)}
         onMouseLeave={() => setrotateSpeed(5)}
