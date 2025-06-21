@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import TransitionDiv from "../../components/TransitionDiv/TransitionDiv";
 import CustomCursor from "../../components/CustomCursor/CustomCursor";
@@ -6,12 +6,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { setCursorType } from "../../../features/cursorType/cursorType";
 import { setSelectedTab } from "../../../features/tabSlice/tabSlice";
 import { Link } from "react-router";
+import HouseCanvas from "../../components/HouseComponent/HouseComponent";
 
 function Home() {
   const containerRef = useRef(null);
   const selectedCursor = useSelector((state) => state.cursorType.currentType);
   const isMobile = useSelector((state) => state.isMobile.isMobile);
   const dispatch = useDispatch();
+  const [rotateSpeed, setrotateSpeed] = useState(5)
 
   return (
     <motion.div
@@ -54,10 +56,13 @@ function Home() {
         initial={{ x: "10vw", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
+        onMouseEnter={() => setrotateSpeed(1)}
+        onMouseLeave={() => setrotateSpeed(5)}
       >
         {/* TODO: Add 3D interactive house model here */}
-        <div className="w-full h-[250px] md:h-[400px] bg-rnr-light-surface-alt rounded-xl border border-rnr-light-border flex items-center justify-center">
-          <span className="text-rnr-light-muted">[ 3D House Coming Soon ]</span>
+        <div className="w-full h-[250px] md:h-[400px] bg-transparent flex items-center justify-center">
+          {/* <span className="text-rnr-light-muted">[ 3D House Coming Soon ]</span> */}
+          <HouseCanvas rotateSpeed={rotateSpeed}/>
         </div>
       </motion.div>
 
